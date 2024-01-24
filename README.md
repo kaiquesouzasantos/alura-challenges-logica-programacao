@@ -8,9 +8,6 @@
 ### SOBRE
 
 - .
-
-#
-### CONTEUDO ABORDADO
   
 #
 ### TECNOLOGIAS

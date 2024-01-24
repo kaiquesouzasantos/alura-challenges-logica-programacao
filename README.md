@@ -1,7 +1,7 @@
 <h1 align=center>ALURA-CHALLENGES-LOGICA-PROGRAMACAO</h1>
 
 <p align="center">
-  <img src="alura-challenge.svg" width="500">
+  <img src="logo-challenge.svg" width="500">
 </p>
 
 #

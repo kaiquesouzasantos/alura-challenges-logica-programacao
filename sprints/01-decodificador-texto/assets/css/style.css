@@ -1,0 +1,219 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #F8FCF5;
+	color: #333;
+}
+
+a,
+textarea,
+textarea::placeholder {
+	color: #333;
+	font-weight: 500;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+/* Navbar */
+
+nav {
+	padding: 0 50px;
+}
+
+nav img button {
+	margin-top: 30px;
+	width: 10%;
+}
+
+/* Entrada e saída */
+
+main {
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.campo {
+	margin: 0 7px;
+}
+
+#entrada {
+	width: 65vw;
+}
+
+#resultado {
+	width: 20vw;
+}
+
+textarea {
+	background-color: white;
+	resize: none;
+	width: 100%;
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+#text-entrada,
+#text-resultado {
+	height: 57vh;
+	border-radius: 15px;
+	border: 1px solid #5c5a5a;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+button {
+	padding: 3vh 6vw;
+	margin: 6px 0 6px 0;
+	border: none;
+	border-radius: 20px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.botoes {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-a;
+	margin: 10px 0;
+}
+
+button#btn-criptografar,
+button#btn-copiar {
+	background-color: #0a3871;
+	color: #eee;
+}
+
+button#btn-descriptografar {
+	background-color: #e8edfc;
+	color: #0a3871;
+	border: 1px solid #0a3871;
+}
+
+#btn-criptografar {
+	margin-right: 6px;
+}
+
+#btn-criptografar, #btn-descriptografar {
+	width: 40vw;
+}
+
+#btn-copiar { 
+	width: 80vw;
+}
+
+/* Entrada */
+#text-entrada::placeholder {
+	color: #333;
+}
+
+/* Resultado (saída) */
+#text-resultado {
+	background-image: url(../img/saida-background.svg);
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: 100%;
+	background-position: center;
+	border: 1px solid #333;
+	transition: all 250ms ease-in-out;
+}
+
+/* Modal do botão copiar */
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(232, 237, 252);
+	text-align: center;
+	animation: reveal 1500ms ease-in-out;
+}
+
+@keyframes reveal {
+	50% {
+		opacity: 1;
+		background-color: rgba(232, 237, 252, 0.75);
+	}
+
+	100% {
+		background-color: transparent;
+		opacity: 0;
+	}
+}
+
+.show-modal {
+	display: block;
+}
+
+.modal p {
+	display: inline-block;
+	margin-top: 40vh;
+	background-color: #0a3871;
+	color: #e8edfc;
+	margin: inherit auto;
+	padding: 3vh 5vw;
+}
+
+.remove-background {
+	background-size: 0% !important;
+}
+
+/* Notificacao de Erro */
+#erro {
+	margin: 10px 0 15px 0;
+}
+
+#erro p {
+	transition: all 50ms ease-in-out;
+	color: #ff2000;
+}
+
+#erro p::before {
+	content: url(../img/alerta.svg);
+	margin-right: 0.3em;
+}
+
+.bloqueado {
+	cursor: not-allowed !important;
+}
+
+/* Footer */
+footer {
+	margin: 60px 0;
+	text-align: center;
+}
+
+.social {
+	margin-top: 15px;
+}
+
+.social img {
+	max-width: 30px;
+}
+
+#logo,
+button {
+	background-color: transparent;
+}
+
+.modoEscuro {
+	background-color: #333333;
+	color: #ffffff;
+}

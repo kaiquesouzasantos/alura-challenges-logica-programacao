@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-page.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-page.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon-page.png">
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<title>Decodificador de Texto</title>
+</head>
+
+<body>
+	<nav>
+		<center>
+			<button>
+				<img id="logo" src="assets/img/alura.svg" />
+			</button>
+		</center>
+	</nav>
+
+	<main>
+		<div class="campo" id="entrada">
+			<textarea id="text-entrada" placeholder="Digite seu texto" autofocus></textarea>
+			
+			<div id="erro">
+				<p>Mensagem fora dos padrões, por favor utilize somente letras minúsculas sem acentos ou números</p>
+			</div>
+
+			<div class="botoes">
+				<button id="btn-criptografar" class="bloqueado">Criptografar</button>
+				<button id="btn-descriptografar" class="bloqueado">Descriptografar</button>
+			</div>
+		</div>
+
+		<div class="campo" id="resultado">
+			<textarea id="text-resultado" readonly></textarea>
+
+			<div class="botoes">
+				<button id="btn-copiar" class="bloqueado">Copiar</button>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>
+			2024 &copy; - Desenvolvido por
+			<a href="https://www.instagram.com/kaiquesouzasantoss/" target="_blank">Kaique Souza Santos</a>
+		</p>
+
+		<div class="social">
+			<a href="https://github.com/kaiquesouzasantos/" target="_blank">
+				<img src="assets/img/social/github.png"alt="Logo do GitHub" />
+			</a>
+			<a href="https://www.linkedin.com/in/kaique-souza-santos" target="_blank">
+				<img src="assets/img/social/linkedin.png" alt="Logo do linkedin" />
+			</a>
+		</div>
+
+	</footer>
+
+	<div id="modal-copiar" class="modal">
+		<p id="modal-copiar-texto"></p>
+	</div>
+
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,13 +1,13 @@
 <h1 align=center>ALURA-CHALLENGES-LOGICA-PROGRAMACAO</h1>
 
 <p align="center">
-  <img src="alura-challenges.svg" width="500">
+  <img src="alura-challenge.svg" width="500">
 </p>
 
 #
 ### SOBRE
 
-- Repositório contendo o desenvolvimento na One Next Education 2024, com enfase Back-End.
+- .
 
 #
 ### CONTEUDO ABORDADO
@@ -23,5 +23,5 @@
 ### CONTRIBUIÇÃO
 
 ```
-$ git clone https://github.com/kaiquesouzasantos/oracle-next-education-2024.git 
+$ git clone https://github.com/kaiquesouzasantos/alura-challenges-logica-programacao.git 
 ```
